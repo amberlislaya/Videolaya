@@ -5,7 +5,7 @@ import { RiVideoAddLine } from "react-icons/ri";
 import { Context } from "../context/contextApi";
 import { IoIosSearch } from "react-icons/io";
 import { CgClose } from "react-icons/cg";
-import logo from "../images/AMBERLIS-logos_white.png";
+import { BsYoutube } from "react-icons/bs";
 import { SlMenu } from "react-icons/sl";
 import { FiBell } from "react-icons/fi";
 import Loader from "../shared/loader";
@@ -41,7 +41,7 @@ const Header = () => {
 
     return (
 
-<div className="sticky top-0 z-10 flex flex-row items-center justify-between h-14 px-4 md:px-5 bg-[#1c0a22] dark:bg-[#08030a]">
+<div className="sticky top-0 z-10 flex flex-row items-center justify-between h-14 px-4 md:px-5 bg-[#0c0311] dark:bg-[#08030a]">
         {loading && <Loader />}
 
 <div className="flex h-5 items-center">
@@ -57,9 +57,10 @@ const Header = () => {
 </div>
 )}
   
-<div className="flex items-center">
+<div className="flex gap-1 items-center justify-center">
 <Link to="/" className="flex h-6 items-center">
-<img src={logo} alt="Logo" className="h-10 md:h-20 md:ml-10 md:pl-7 cursor-pointer"/>
+<BsYoutube className="text-3xl text-[#84e4dc]" />
+<span className="text-xl font-medium text-[#fff]">LayaViveo</span>
 </Link>
 </div>
 </div>
